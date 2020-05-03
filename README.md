@@ -22,16 +22,25 @@
  OR
  
  PACKAGE.JSON
+ 
  ...
+ 
  "scripts": {
+ 
     "clean": "rimraf dist",
+    
     "build": "NODE_ENV=production npm run clean && webpack -p",
+    
     "serve": "webpack-dev-server"
+    
     "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
+    
   },
+  
  ...
  
  
  RESULT:
+ 
   https://josecho.github.io/WebpackSampleDeploy/#/
  
